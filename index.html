@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080908">
+  <meta name="description" content="Tam Minh Hoang — Software Engineer. Cinematic developer portfolio, projects, skills and experience.">
+  <title>Tam Minh Hoang — Software Engineer</title>
+  <script>
+    try { document.documentElement.dataset.theme = localStorage.getItem("tmh-cinematic-theme") || "dark"; } catch (_) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="beam beam-one" aria-hidden="true"></div>
+  <div class="beam beam-two" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-aura" aria-hidden="true"></div>
+  <div class="cinematic-vignette" aria-hidden="true"></div>
+  <div class="edge-frame" aria-hidden="true"><span>TMH / PORTFOLIO SYSTEM</span><span>EST. 2021 · NHA TRANG, VN</span></div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="Tam Minh Hoang home">TMH<span class="wordmark-cursor">_</span></a>
+    <div class="top-identity">SOFTWARE ENGINEER <span>//</span> BUILDING DIGITAL PRODUCTS</div>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="#projects">PROJECTS</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#experience">LOGS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <div class="top-actions">
+      <span class="system-online"><i></i> SYSTEM ONLINE</span>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme"><span class="sun">☼</span><span class="toggle-knob"></span><span class="moon">☾</span></button>
+      <a class="resume-link" href="Tam-Minh-Hoang-Resume-EN.pdf" target="_blank" rel="noopener">resume.pdf <span>↗</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#projects">PROJECTS <span>01</span></a>
+    <a href="#skills">SKILLS <span>02</span></a>
+    <a href="#experience">LOGS <span>03</span></a>
+    <a href="#contact">CONTACT <span>04</span></a>
+    <a href="Tam-Minh-Hoang-Resume-EN.pdf" target="_blank" rel="noopener">DOWNLOAD RESUME ↗</a>
+  </nav>
+
+  <main>
+    <section class="hero page-wrap" id="home">
+      <div class="hero-copy">
+        <div class="hero-overline"><span class="overline-line"></span><span>INDEPENDENT DIGITAL CRAFT</span><span class="overline-index">[ 001 ]</span></div>
+        <div class="availability"><span class="pulse-dot"></span> SYSTEM ONLINE <b>//</b> AVAILABLE FOR OPPORTUNITIES</div>
+        <p class="eyebrow">HELLO, I'M TAM MINH HOANG</p>
+        <h1>SOFTWARE<br>ENGINEER<span class="headline-accent">_</span></h1>
+        <p class="hero-description">Building reliable digital products, from thoughtful interfaces to POS systems and payment integrations.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">VIEW PROJECTS <span>↗</span></a>
+          <a class="social-link" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub profile">GH <span>↗</span></a>
+          <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile">IN <span>↗</span></a>
+          <a class="social-link" href="mailto:tam.hoang.developer@gmail.com" aria-label="Email">MAIL <span>↗</span></a>
+        </div>
+        <div class="hero-footnote"><span>01 / INTRODUCTION</span><span>NHA TRANG, VIETNAM <i>↘</i></span></div>
+      </div>
+
+      <div class="system-window" aria-label="Developer system status">
+        <div class="window-corner corner-tl"></div><div class="window-corner corner-tr"></div><div class="window-corner corner-bl"></div><div class="window-corner corner-br"></div>
+        <div class="window-top"><span><i></i> TMH_CORE / STATUS MONITOR</span><span>BUILD 2026.10 <b class="live-clock" id="liveClock">00:00:00</b></span></div>
+        <div class="system-status"><span>SYS.STATUS: NORMAL</span><span>UPTIME: <b id="uptime">99.9%</b></span></div>
+        <div class="status-center">
+          <div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div>
+          <div class="core-mark"><span>TMH</span><i>CORE</i></div>
+          <span class="orbit-label orbit-label-a">FRONTEND</span><span class="orbit-label orbit-label-b">SYSTEMS</span>
+          <span class="crosshair crosshair-a"></span><span class="crosshair crosshair-b"></span>
+          <span class="orbit-coordinate orbit-coordinate-a">X: 12.23 / Y: 109.19</span><span class="orbit-coordinate orbit-coordinate-b">CORE // 01</span>
+        </div>
+        <div class="load-meters">
+          <div class="meter"><div class="meter-label"><span>PROBLEM_SOLVING</span><span>ACTIVE</span></div><div class="meter-track"><i style="--fill:88%"></i></div></div>
+          <div class="meter"><div class="meter-label"><span>PRODUCT_MINDSET</span><span>ACTIVE</span></div><div class="meter-track"><i style="--fill:82%"></i></div></div>
+        </div>
+        <div class="window-bottom"><span>MODE: BUILD / SOLVE / IMPROVE</span><span class="active-projects"><strong>04</strong><small>SELECTED<br>PROJECTS</small></span></div>
+        <div class="scanline"></div>
+      </div>
+      <div class="hero-coordinate coord-a">LAT 12.2388° N<br>LON 109.1967° E</div>
+      <div class="hero-coordinate coord-b">DESIGNING<br>WHAT'S NEXT <span>↗</span></div>
+      <div class="hero-side-index" aria-hidden="true"><span>SCROLL TO EXPLORE</span><i></i><b>↓</b></div>
+    </section>
+
+    <section class="metrics page-wrap" aria-label="Career highlights">
+      <div class="metric"><span class="metric-index">01</span><strong data-count="2" data-suffix="+">2+</strong><span>YEARS EXPERIENCE</span></div>
+      <div class="metric"><span class="metric-index">02</span><strong data-count="200" data-suffix="+">200+</strong><span>USERS SUPPORTED</span></div>
+      <div class="metric"><span class="metric-index">03</span><strong data-count="20" data-suffix="%">20%</strong><span>EFFICIENCY GAIN</span></div>
+      <div class="metric"><span class="metric-index">04</span><strong data-count="30" data-suffix="%">30%</strong><span>PROCESSING TIME REDUCTION</span></div>
+    </section>
+
+    <section class="about-section page-wrap section-block" id="about">
+      <div class="section-intro">
+        <span class="section-kicker">02 / PROFILE</span>
+        <h2>I build systems,<br><em>not just screens.</em></h2>
+      </div>
+      <div class="about-copy">
+        <p>I'm a frontend-focused software engineer who enjoys turning complex requirements into useful, dependable digital experiences.</p>
+        <p>My work spans web applications, desktop software, POS workflows and payment integrations. I care about clean implementation, practical problem-solving and the small details that make software feel right.</p>
+      </div>
+      <div class="about-terminal">
+        <div class="terminal-head"><span><i></i><i></i><i></i></span><span>developer.profile</span><span>● CONNECTED</span></div>
+        <pre><code><span class="code-muted">const</span> developer = {
+  name: <span class="code-string">"Tam Minh Hoang"</span>,
+  focus: <span class="code-string">"Frontend / Full-Stack"</span>,
+  domains: [<span class="code-string">"Web"</span>, <span class="code-string">"Desktop"</span>, <span class="code-string">"POS"</span>],
+  mindset: <span class="code-string">"Build. Solve. Improve."</span>
+};</code></pre>
+      </div>
+    </section>
+
+    <section class="experience-section page-wrap section-block" id="experience">
+      <div class="section-heading">
+        <div><span class="section-kicker">03 / CAREER LOG</span><h2>Experience <em>in motion.</em></h2></div>
+        <span class="section-side-note">A LOG OF WHAT I'VE BUILT <b>↘</b></span>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date"><strong>05.2023</strong><span>↓</span><strong>05.2025</strong><small>25 MONTHS</small></div>
+          <div class="timeline-rail"><i></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta"><span>01 / INFOdation</span><span>FULL-TIME</span></div>
+            <h3>Front End Developer</h3><p class="job-location">NHA TRANG, VIETNAM</p>
+            <p>Developed real-time dashboards and production web applications for customer-service operations, serving more than 200 users. Improved UI performance and workflow efficiency while collaborating in Agile teams.</p>
+            <div class="timeline-results"><div><strong>200+</strong><span>USERS</span></div><div><strong>20%</strong><span>EFFICIENCY GAIN</span></div><div><strong>30%</strong><span>LESS PROCESSING TIME</span></div></div>
+            <div class="tag-list"><span>Angular</span><span>React</span><span>.NET Core</span><span>MongoDB</span><span>Azure</span><span>TypeScript</span></div>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date"><strong>06.2022</strong><span>↓</span><strong>04.2023</strong><small>11 MONTHS</small></div>
+          <div class="timeline-rail"><i></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta"><span>02 / BLUE SAPPHIRE CORPORATION</span><span>SUPPORT + DEV</span></div>
+            <h3>Tech Support &amp; Developer</h3><p class="job-location">NHA TRANG, VIETNAM</p>
+            <p>Supported POS environments, payment terminals, printers and store operations while developing internal tools and troubleshooting workflows across hardware, software and networking.</p>
+            <div class="timeline-results"><div><strong>11 MO</strong><span>DURATION</span></div><div><strong>03</strong><span>CORE DOMAINS</span></div><div><strong>POS</strong><span>PAYMENT SYSTEMS</span></div></div>
+            <div class="tag-list"><span>POS</span><span>Payments</span><span>Windows</span><span>Networking</span><span>Hardware</span></div>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date"><strong>2021</strong><span>↓</span><strong>PRESENT</strong><small>ONGOING</small></div>
+          <div class="timeline-rail"><i></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta"><span>03 / INDEPENDENT</span><span>SELF-DIRECTED</span></div>
+            <h3>Freelance Developer</h3><p class="job-location">REMOTE</p>
+            <p>Designed and built websites, dashboards and application prototypes using modern JavaScript frameworks and cloud platforms, exploring product ideas from UI through implementation.</p>
+            <div class="timeline-results"><div><strong>WEB</strong><span>APPLICATIONS</span></div><div><strong>UI/UX</strong><span>EXPERIMENTATION</span></div><div><strong>BUILD</strong><span>ITERATE</span></div></div>
+            <div class="tag-list"><span>React</span><span>Next.js</span><span>Firebase</span><span>Vercel</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects-section page-wrap section-block" id="projects">
+      <div class="section-heading">
+        <div><span class="section-kicker">04 / SELECTED WORK</span><h2>Things I've <em>made.</em></h2></div>
+        <span class="section-side-note">A FEW BUILDS FROM THE LAB <b>↘</b></span>
+      </div>
+      <div class="project-grid">
+        <article class="project project-featured">
+          <div class="project-visual visual-portfolio"><div class="visual-top"><span>TMH / DEV</span><span>01 — 04</span></div><div class="visual-big-type">DIGITAL<br><em>IDENTITY.</em></div><div class="visual-line"></div><div class="visual-footer"><span>INTERFACE / MOTION / SYSTEMS</span><span>↗</span></div></div>
+          <div class="project-details"><div class="project-label"><span>PROJECT 01</span><span>PERSONAL</span></div><h3>Personal Portfolio</h3><p>A responsive portfolio built to present work, technical focus and personal identity through a clean, motion-led interface.</p><div class="tag-list"><span>React</span><span>Tailwind CSS</span><span>Supabase</span><span>TypeScript</span></div></div>
+        </article>
+        <article class="project">
+          <div class="project-visual visual-retail"><div class="phone phone-a"><i></i><b>OVERVIEW</b><span></span><span></span><span></span></div><div class="phone phone-b"><i></i><b>INVENTORY</b><span></span><span></span><span></span></div><div class="visual-caption">RETAIL / CLOUD / MOBILE</div></div>
+          <div class="project-details"><div class="project-label"><span>PROJECT 02</span><span>MOBILE</span></div><h3>Retail Store Management</h3><p>Mobile-first inventory and customer management with real-time cloud data and secure authentication.</p><div class="tag-list"><span>Flutter</span><span>GetX</span><span>Firebase</span><span>Google Cloud</span></div></div>
+        </article>
+        <article class="project">
+          <div class="project-visual visual-pos"><div class="pos-device device-a"><i></i><b>SALE</b><span>APPROVED</span></div><div class="pos-device device-b"><i></i><b>PAYMENT</b><span>CONNECTED</span></div><div class="visual-caption">POS / PAYMENT / INTEGRATION</div></div>
+          <div class="project-details"><div class="project-label"><span>PROJECT 03</span><span>SYSTEMS</span></div><h3>POS &amp; Payment Engineering</h3><p>Desktop POS workflows, payment terminal integration, printer connectivity and transaction troubleshooting.</p><div class="tag-list"><span>Electron</span><span>Angular</span><span>PAX</span><span>Dejavoo</span><span>SNBC</span></div></div>
+        </article>
+        <article class="project">
+          <div class="project-visual visual-knowledge"><div class="code-window"><div><i></i><i></i><i></i><span>knowledge.base</span></div><p><b>01</b> const search = createIndex();</p><p><b>02</b> await documents.embed();</p><p><b>03</b> return semanticResults;</p><p><b>04</b> // keep knowledge connected</p></div><div class="visual-caption">SEARCH / KNOWLEDGE / AI</div></div>
+          <div class="project-details"><div class="project-label"><span>PROJECT 04</span><span>EXPERIMENTAL</span></div><h3>Developer Knowledge Base</h3><p>A personal knowledge system exploring structured notes, permissions, full-text search and semantic retrieval.</p><div class="tag-list"><span>Next.js</span><span>Supabase</span><span>Tiptap</span><span>PostgreSQL</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills-section page-wrap section-block" id="skills">
+      <div class="section-heading"><div><span class="section-kicker">05 / TECHNICAL LOADOUT</span><h2>Tools of the <em>trade.</em></h2></div><span class="section-side-note">PRACTICAL SKILLS, REAL BUILDS <b>↘</b></span></div>
+      <div class="skills-layout">
+        <div class="skill-feature"><span class="skill-index">CORE SPECIALTY / 01</span><h3>Frontend<br><em>Engineering</em></h3><p>Building responsive, accessible and maintainable interfaces with a focus on clear user flows and performance.</p><div class="tag-list"><span>Angular</span><span>React</span><span>Next.js</span><span>TypeScript</span><span>JavaScript</span><span>HTML</span><span>CSS / SCSS</span><span>Tailwind</span></div><div class="skill-graphic" aria-hidden="true"><span>&lt;</span><i>/</i><b>&gt;</b></div></div>
+        <div class="skill-groups">
+          <article class="skill-group"><span>02 / BACKEND</span><h3>Services &amp; Data</h3><p>C# · .NET Core · Node.js · REST APIs · MySQL · MongoDB · Firebase · Supabase</p></article>
+          <article class="skill-group"><span>03 / SYSTEMS</span><h3>Desktop &amp; Payments</h3><p>Electron · POS · PAX · Dejavoo · SNBC · Epson · USB / Serial · Networking</p></article>
+          <article class="skill-group"><span>04 / TOOLING</span><h3>Build &amp; Collaborate</h3><p>Git · GitHub · Jira · Figma · VS Code · Docker · Agile · Debugging</p></article>
+          <article class="skill-group"><span>05 / HUMAN SKILLS</span><h3>How I work</h3><p>Problem-solving · Teamwork · Communication · Adaptability · System thinking</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="education-section page-wrap section-block" id="education">
+      <div class="section-heading"><div><span class="section-kicker">06 / KNOWLEDGE ARCHIVE</span><h2>Always <em>learning.</em></h2></div></div>
+      <div class="education-grid">
+        <article><span class="education-year">2019 — 2023</span><span class="education-id">EDU / 01</span><h3>Bachelor of Science</h3><p>Information Technology</p><span class="education-place">NHA TRANG UNIVERSITY</span><b class="education-badge">GPA 7.7 / 10</b></article>
+        <article><span class="education-year">2024</span><span class="education-id">CERT / 02</span><h3>Responsive Web Design</h3><p>freeCodeCamp</p><span class="education-place">CERTIFICATE</span><b class="education-badge">COMPLETED</b></article>
+        <article><span class="education-year">2024</span><span class="education-id">CERT / 03</span><h3>JavaScript Algorithms &amp; Data Structures</h3><p>freeCodeCamp</p><span class="education-place">CERTIFICATE</span><b class="education-badge">COMPLETED</b></article>
+      </div>
+    </section>
+
+    <section class="contact-section page-wrap" id="contact">
+      <div class="contact-copy"><span class="section-kicker">07 / OPEN CHANNEL</span><h2>Let's build<br><em>what's next.</em></h2><p>Have an opportunity, a product idea or a tricky problem to solve? Let's talk.</p><a class="button button-primary" href="mailto:tam.hoang.developer@gmail.com">START A CONVERSATION <span>↗</span></a></div>
+      <div class="contact-status"><div class="contact-status-top"><span>CHANNEL STATUS</span><span><i></i> OPEN</span></div><div class="contact-email-label">EMAIL / PRIMARY</div><a class="contact-email" href="mailto:tam.hoang.developer@gmail.com">tam.hoang.developer@gmail.com <span>↗</span></a><div class="contact-line"></div><div class="contact-meta"><span>LOCATION</span><strong>NHA TRANG, VIETNAM</strong></div><div class="contact-meta"><span>MODE</span><strong>BUILDING / LEARNING / SHIPPING</strong></div></div>
+    </section>
+
+    <footer class="footer page-wrap"><a class="wordmark" href="#home">TMH<span class="wordmark-cursor">_</span></a><span>BUILD <i>·</i> SOLVE <i>·</i> IMPROVE</span><span>© 2026 TAM MINH HOANG</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
